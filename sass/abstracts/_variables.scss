@@ -1,0 +1,7 @@
+@use "./colors";
+
+$font-size : 10px;
+
+body {
+  border-color: colors.$colorDark;
+}
