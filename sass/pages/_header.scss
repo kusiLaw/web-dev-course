@@ -1,0 +1,103 @@
+@use "../abstracts" as *;
+
+header{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include border; 
+  background: url('../../images/mobile_intro_bg.png') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+
+  .navigation{
+    display: flex ;
+    flex-direction: column;
+    position: relative;
+    height: 8rem;
+    width: 100%;
+
+    nav {
+      display: flex;
+      height: 8rem;
+      font-size: 2rem;
+      width: 100%;
+      @include border(green);
+      align-items: center;
+      padding: 1rem;
+      position: fixed;
+
+      .nav-mobile{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+  
+        .logo-box{
+          display: none;
+        }
+  
+        .nav-content {
+          display: none;
+        }
+      }
+  
+      .mobile-toggle {
+        width: 100%;
+  
+        #close-nav {
+          width: 4rem;
+        }
+      }
+    }
+  
+  }
+
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    justify-content: space-between;
+    gap: 5%;
+    height: 100%;
+    width: 100%;
+    @include border;
+
+    h1{
+      font-size: 4rem;
+      font-weight: 900;
+      background-image: radial-gradient( #e5ba69, #ff2609);
+      -webkit-background-clip: text;
+      color: transparent;
+
+      span{
+        display: block;
+        font-size: smaller;
+        margin-bottom: 5%;
+        font-weight: 600;
+        background-image: linear-gradient(to right,#d3230b);
+        -webkit-background-clip: text;
+        background-image: radial-gradient();
+        color: transparent;
+      }
+    }
+
+    p{
+      font-size: 2.5rem;
+    }
+
+    h2{
+      font-size: 2.5rem;
+      font-weight: 800;
+
+      span{
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+
+  }
+  
+}

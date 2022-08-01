@@ -1,5 +1,106 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  border-color: #272a31;
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+.container {
+  min-width: 37.5rem;
+}
+
+/* reset settings for all browser */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid red;
+  background: url("../../images/mobile_intro_bg.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+header .navigation {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 8rem;
+  width: 100%;
+}
+header .navigation nav {
+  display: flex;
+  height: 8rem;
+  font-size: 2rem;
+  width: 100%;
+  border: 1px solid red;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+}
+header .navigation nav .nav-mobile {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+header .navigation nav .nav-mobile .logo-box {
+  display: none;
+}
+header .navigation nav .nav-mobile .nav-content {
+  display: none;
+}
+header .navigation nav .mobile-toggle {
+  width: 100%;
+}
+header .navigation nav .mobile-toggle #close-nav {
+  width: 4rem;
+}
+header .content {
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+  justify-content: space-between;
+  gap: 5%;
+  height: 100%;
+  width: 100%;
+  border: 1px solid red;
+}
+header .content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  background-image: radial-gradient(#e5ba69, #ff2609);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+header .content h1 span {
+  display: block;
+  font-size: smaller;
+  margin-bottom: 5%;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #d3230b);
+  -webkit-background-clip: text;
+  background-image: radial-gradient();
+  color: transparent;
+}
+header .content p {
+  font-size: 2.5rem;
+}
+header .content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+header .content h2 span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */

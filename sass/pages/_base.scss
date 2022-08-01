@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+html{
+  font-size: $font-size;
+}
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+}
+
+.container {
+  min-width: 37.5rem;
+}
+
+
+/* reset settings for all browser */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
