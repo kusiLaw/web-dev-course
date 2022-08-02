@@ -10,7 +10,8 @@ main{
     color: white;
     display: flex;
     flex-direction: column;
-    height: 100rem;
+    padding-bottom: 4rem;
+    height: 120rem;
     justify-content: center; 
     align-content: center;
     gap: 5%;
@@ -90,6 +91,25 @@ main{
         }
       }
     }
+
+    .join{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+      button{
+        height: 6rem;
+        color: white;
+        font-size: larger;
+        font-weight:700;
+        padding: 2rem;
+        border: none;
+        cursor: pointer;
+        background-color: $colorPrimary;
+      }
+    }
+
   }
  
 

@@ -116,7 +116,8 @@ main .main-program {
   color: white;
   display: flex;
   flex-direction: column;
-  height: 100rem;
+  padding-bottom: 4rem;
+  height: 120rem;
   justify-content: center;
   align-content: center;
   gap: 5%;
@@ -184,6 +185,22 @@ main .main-program .program-list .program-title p {
   align-items: center;
   font-size: 2.5rem;
   font-weight: 700;
+}
+main .main-program .join {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+main .main-program .join button {
+  height: 6rem;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  padding: 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: #cf2715;
 }
 
 /*# sourceMappingURL=main.css.map */
