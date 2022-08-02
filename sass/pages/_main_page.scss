@@ -17,25 +17,6 @@ main{
     gap: 5%;
     font-size: 1.6rem;
 
-    .program-header-wrap{
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      gap:1rem ;
-    }
-
-    h2 {
-      font-size: $h2;
-      display: flex;
-      justify-content: center;
-    }
-    .program-style{
-      display: flex;
-      background-color: $colorPrimary;
-      width: 4rem;
-      height: 0.5rem;
-      align-self: center;
-    }
     .program-list {
       // background-color: $colorGray;
       gap: 2%;
@@ -112,5 +93,100 @@ main{
 
   }
  
+
+  .program-header-wrap{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap:1rem ;
+  }
+
+  h2 {
+    font-size: $h2;
+    display: flex;
+    justify-content: center;
+  }
+  .program-style{
+    display: flex;
+    background-color: $colorPrimary;
+    width: 4rem;
+    height: 0.5rem;
+    align-self: center;
+  }
+
+  .mainSpeakers {
+    background-color: white;
+    padding-bottom: 3.5rem;
+    padding-top: 7.9rem;
+    color :rgb(39, 42, 50);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .program-header-wrap{
+      padding-bottom: 1.6rem;
+    }
+
+    .lecturers{
+      height: auto;
+      width: 100%;
+      display: flex;
+      padding: 2rem;
+      gap: 1.5rem;
+
+      .lecturer{
+        display: flex;
+        gap: 2rem;
+
+        .lect-img{
+          width: 12.8rem;
+        }
+
+        .lecturer-info{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 2.4rem;
+        }
+
+        .about{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .name{
+          font-size: 2.2rem;
+        }
+
+        .work{
+          font-size: 1.4rem;
+          color: $colorPrimary;
+        }
+
+        .extra{
+          font-size: 1.4rem;
+        }
+      }
+     
+    }
+
+    .more{
+      display: flex;
+      justify-content: center;
+    }
+    button{
+      width: 90%;
+      font-size: 1.8rem;
+      font-family: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:2rem;
+      height: 4.5rem;
+    }
+
+  }
 
 }

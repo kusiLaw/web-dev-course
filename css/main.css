@@ -123,24 +123,6 @@ main .main-program {
   gap: 5%;
   font-size: 1.6rem;
 }
-main .main-program .program-header-wrap {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  gap: 1rem;
-}
-main .main-program h2 {
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: center;
-}
-main .main-program .program-style {
-  display: flex;
-  background-color: #cf2715;
-  width: 4rem;
-  height: 0.5rem;
-  align-self: center;
-}
 main .main-program .program-list {
   gap: 2%;
   height: 120rem;
@@ -201,6 +183,86 @@ main .main-program .join button {
   border: none;
   cursor: pointer;
   background-color: #cf2715;
+}
+main .program-header-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 1rem;
+}
+main h2 {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+main .program-style {
+  display: flex;
+  background-color: #cf2715;
+  width: 4rem;
+  height: 0.5rem;
+  align-self: center;
+}
+main .mainSpeakers {
+  background-color: white;
+  padding-bottom: 3.5rem;
+  padding-top: 7.9rem;
+  color: rgb(39, 42, 50);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .mainSpeakers .program-header-wrap {
+  padding-bottom: 1.6rem;
+}
+main .mainSpeakers .lecturers {
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+main .mainSpeakers .lecturers .lecturer {
+  display: flex;
+  gap: 2rem;
+}
+main .mainSpeakers .lecturers .lecturer .lect-img {
+  width: 12.8rem;
+}
+main .mainSpeakers .lecturers .lecturer .lecturer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+main .mainSpeakers .lecturers .lecturer .about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .mainSpeakers .lecturers .lecturer .name {
+  font-size: 2.2rem;
+}
+main .mainSpeakers .lecturers .lecturer .work {
+  font-size: 1.4rem;
+  color: #cf2715;
+}
+main .mainSpeakers .lecturers .lecturer .extra {
+  font-size: 1.4rem;
+}
+main .mainSpeakers .more {
+  display: flex;
+  justify-content: center;
+}
+main .mainSpeakers button {
+  width: 90%;
+  font-size: 1.8rem;
+  font-family: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 4.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
