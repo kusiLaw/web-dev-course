@@ -11,39 +11,43 @@ main{
     display: flex;
     flex-direction: column;
     padding-bottom: 4rem;
-    height: 120rem;
-    justify-content: center; 
-    align-content: center;
-    gap: 5%;
+    padding-top: 4rem;
+    min-height: 80.7rem;
+    height: auto;
+    justify-content: space-between; 
+    // align-content: center;
+    gap: 2.5rem;
+    @include border(blue);
     font-size: 1.6rem;
 
     .program-list {
       // background-color: $colorGray;
-      gap: 2%;
-      height: 120rem;
+     
+      height: auto;
       display: flex;
-      flex: auto;
+      padding: 1rem;
+      gap: 2%;
       background-color:  #3d4047;
       align-items: center;
       // @include border(blue);
 
       .program-header {
         display: flex;
-        width: 40%;
+        width: 50%;
         align-content: center;
         justify-content: center;
-        padding: 1rem;
+        // padding: 1rem;
         height: 100%;
         // @include border;
       }
 
       .program-text{
-        width: 60%;
+        width: 50%;
         display: flex;
         justify-content: center;
         align-content: flex-end;
         font-size: 2rem;
-        height: 100%;
+        height: auto;
         // @include border;
       }
 
@@ -61,14 +65,16 @@ main{
         justify-content: center;
         align-items: center;
         // @include border;
-        width: 100%;
+        width: 60%;
         p{
           color: $colorPrimary;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: $h2;
-          font-weight: 700;
+          flex-wrap: wrap;
+          font-size: 2rem;
+          flex-shrink: 2;
+          font-weight: 500;
         }
       }
     }
@@ -103,6 +109,7 @@ main{
 
   h2 {
     font-size: $h2;
+    font-weight: 700;
     display: flex;
     justify-content: center;
   }

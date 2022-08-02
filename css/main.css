@@ -31,7 +31,7 @@ header {
   border: 1px solid blue;
   background: url("../../images/mobile_intro_bg.png") no-repeat;
   background-size: cover;
-  height: 75vh;
+  height: auto;
   width: 100%;
 }
 header .navigation {
@@ -97,6 +97,9 @@ header .content h1 span {
 }
 header .content p {
   font-size: 2rem;
+  background-color: whitesmoke;
+  padding: 2rem;
+  border: 2px solid white;
 }
 header .content h2 {
   font-size: 2rem;
@@ -117,35 +120,36 @@ main .main-program {
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
-  height: 120rem;
-  justify-content: center;
-  align-content: center;
-  gap: 5%;
+  padding-top: 4rem;
+  min-height: 80.7rem;
+  height: auto;
+  justify-content: space-between;
+  gap: 2.5rem;
+  border: 1px solid blue;
   font-size: 1.6rem;
 }
 main .main-program .program-list {
-  gap: 2%;
-  height: 120rem;
+  height: auto;
   display: flex;
-  flex: auto;
+  padding: 1rem;
+  gap: 2%;
   background-color: #3d4047;
   align-items: center;
 }
 main .main-program .program-list .program-header {
   display: flex;
-  width: 40%;
+  width: 50%;
   align-content: center;
   justify-content: center;
-  padding: 1rem;
   height: 100%;
 }
 main .main-program .program-list .program-text {
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-content: flex-end;
   font-size: 2rem;
-  height: 100%;
+  height: auto;
 }
 main .main-program .program-list .program-img {
   width: 6rem;
@@ -158,15 +162,17 @@ main .main-program .program-list .program-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 60%;
 }
 main .main-program .program-list .program-title p {
   color: #cf2715;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
-  font-weight: 700;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  flex-shrink: 2;
+  font-weight: 500;
 }
 main .main-program .join {
   height: auto;
@@ -191,7 +197,8 @@ main .program-header-wrap {
   gap: 1rem;
 }
 main h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   display: flex;
   justify-content: center;
 }

@@ -7,7 +7,7 @@ header{
   @include border(blue); 
   background: url('../../images/mobile_intro_bg.png') no-repeat;
   background-size: cover;
-  height: 75vh;
+  height: auto;
   width: 100%;
 
 
@@ -87,6 +87,9 @@ header{
 
     p{
       font-size: 2rem;
+      background-color: whitesmoke;
+      padding: 2rem;
+      border: 2px solid white;
     }
 
     h2{
