@@ -1,0 +1,7 @@
+@mixin nevigation_mobile_default($theme: red) {
+  display: flex ;
+  flex-direction: column;
+  position: relative;
+  height: 6rem;
+  width: 100%;
+}

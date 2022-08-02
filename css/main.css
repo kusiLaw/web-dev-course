@@ -28,7 +28,6 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
   background: url("../../images/mobile_intro_bg.png") no-repeat;
   background-size: cover;
   height: auto;
@@ -46,7 +45,6 @@ header .navigation nav {
   height: 6rem;
   font-size: 1.6rem;
   width: 100%;
-  border: 1px solid green;
   align-items: center;
   padding: 1rem;
   position: fixed;
@@ -56,17 +54,81 @@ header .navigation .nav-mobile {
   justify-content: flex-start;
   width: 100%;
 }
-header .navigation .nav-mobile .logo-box {
-  display: none;
-}
 header .navigation .nav-mobile .nav-content {
   display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  margin: -1px;
+  max-width: 76.7rem;
+  width: 32rem;
+  color: white;
+  font-size: 2.2rem;
+  background-color: rgba(38, 40, 48, 0.95);
+}
+header .navigation .nav-mobile .close-wrap {
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1.5rem;
+}
+header .navigation .nav-mobile #toggle-close {
+  align-self: flex-end;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+header .navigation .nav-mobile .nav-items {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  cursor: pointer;
+}
+header .navigation .nav-mobile .nav-items a {
+  color: white;
+  text-decoration: none;
+}
+header .navigation .nav-mobile .nav-items a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #ec5242;
+}
+header .navigation .nav-mobile .nav-items .nav-nestd-list {
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+}
+header .navigation .nav-mobile .nav-items .nav-nestd-list.toggle {
+  display: flex;
+}
+header .navigation .nav-mobile .nav-items .nav-nestd-list li {
+  padding: 0.5rem;
+  font-size: 2rem;
+  list-style: none;
+}
+header .navigation .nav-mobile .nav-items .nav-items-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2.2rem;
+}
+header .navigation .nav-mobile .nav-items .nav-items-content #pointer {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotate(-90deg);
+}
+header .navigation .nav-mobile .nav-items .nav-items-content #pointer.toggle {
+  transform: rotate(0deg);
 }
 header .navigation .nav-mobile .mobile-toggle {
   width: auto;
 }
 header .navigation .nav-mobile .mobile-toggle #close-nav {
-  width: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 header .content {
   display: flex;
@@ -76,7 +138,6 @@ header .content {
   gap: 1rem;
   height: 100%;
   width: 100%;
-  border: 1px solid red;
 }
 header .content h1 {
   font-size: 3.5rem;
@@ -165,7 +226,7 @@ main .main-program .program-list .program-title {
   width: 60%;
 }
 main .main-program .program-list .program-title p {
-  color: #cf2715;
+  color: #ec5242;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +249,7 @@ main .main-program .join button {
   padding: 2rem;
   border: none;
   cursor: pointer;
-  background-color: #cf2715;
+  background-color: #ec5242;
 }
 main .program-header-wrap {
   display: flex;
@@ -204,7 +265,7 @@ main h2 {
 }
 main .program-style {
   display: flex;
-  background-color: #cf2715;
+  background-color: #ec5242;
   width: 4rem;
   height: 0.5rem;
   align-self: center;
@@ -252,7 +313,7 @@ main .mainSpeakers .lecturers .lecturer .name {
 }
 main .mainSpeakers .lecturers .lecturer .work {
   font-size: 1.4rem;
-  color: #cf2715;
+  color: #ec5242;
 }
 main .mainSpeakers .lecturers .lecturer .extra {
   font-size: 1.4rem;
