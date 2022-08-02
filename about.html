@@ -1,65 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
   <title>Document</title>
 </head>
+
 <body>
-    <div class="contianer">
-      <header>
-        <div class = "navigation">
-          <nav>
-            <div class="nav-mobile">
-              <div class="nav-content">
-                <ul class="nav-items">
-                  <li class="nav-items">Home</li>
-                  <li class="nav-items nested">
-                    <div class="nav-items-content">
-                      <span>Courses</span> 
-                      <img src="./images/arrow_down.png" alt="">
-                    </div>
-                    <ul class="nav-nestd-list">
-                      <li class="nav-nested-items">Basic Html and CSS</li>
-                      <li class="nav-nested-items">Ruby on Rails</li>
-                      <li class="nav-nested-items">Django</li>
-                      <li class="nav-nested-items">React</li>
-                    </ul>
-                  
-                  </li>
-                  <li class="nav-items nested">Sponsor</li>
-                  <li class="nav-items">About</li>
-                </ul>
+  <div class="contianer">
+    <header>
+      <div class="navigation">
+        <nav>
+          <div class="nav-mobile">
+            <div class="nav-content">
+              <div class="close-wrap">
+                <img id="toggle-close" src="./images/close_mobile_menu.png" alt="close">
               </div>
-              <div class="mobile-toggle">
-                <img id="close-nav" src="./images/mobile_menu.png" alt="expand">
-              </div> 
-              <!-- <div class="logo-box">
+              <ul class="nav-items">
+                <li id="home" class="nav-items"><a href="#">Home</a></li>
+                <li class="nav-items ">
+                  <button class="nav-items-content">
+                    <span>Courses</span>
+                    <img id="pointer" class="" src="./images/arrow_down.png" alt="">
+                  </button>
+                  <ul class="nav-nestd-list ">
+                    <li id="CSS" class="nav-nested-items"><a href="">Basic Html and CSS</a> </li>
+                    <li id="ruby" class="nav-nested-items"><a href="">Ruby on Rails</a></li>
+                    <li id="django" class="nav-nested-items"><a href="">Django</a></li>
+                    <li id="react" class="nav-nested-items"><a href="">React</a></li>
+                  </ul>
+
+                </li>
+                <li id="sponsor" class="nav-items nested"><a href="">Sponsor</a></li>
+                <li id="about" class="nav-items"><a href="./about.html"> About</a></li>
+              </ul>
+            </div>
+            <div class="mobile-toggle">
+              <img id="close-nav" src="./images/mobile_menu.png" alt="expand">
+            </div>
+            <!-- <div class="logo-box">
                 <Span>logo here</Span>
-              </div>  -->
-            </div> <!--end of nav-mobile--> 
-          </nav>
-        </div>
-    
-        <div class="content">
-          <h1><span>"Hello! sharing World"</span>WEB DEVELOPMENT <br> BOOTCAMP 2022</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id autem molestiae animi. Nam laborum quaerat quisquam mollitia, amet inventore recusandae velit voluptatum . </p>
-          <h2>2022.10.15~2023.10.15<span>@Valley View University Gh and Live online</span></h2>
+              </div> -->
+          </div>
+          <!--end of nav-mobile-->
+        </nav>
+      </div>
+
+      <div id="forAbout" class="content ">
+        <h1><span>"Hello! sharing World"</span>WEB DEVELOPMENT <br> BOOTCAMP 2022</h1>
+        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id autem molestiae animi. Nam laborum
+          quaerat quisquam mollitia, amet inventore recusandae velit voluptatum. Quaerat id autem molestiae animi. </p>
+        <h2 class="home">2022.10.15~2023.10.15<span>@Valley View University Gh and Live online</span></h2>
+        <P class="about-contact-info">Please contact us per Email for any further questions about Free Web Development Bootcamp<br>
+          <span><a href="mailto:support.freewebcamp2022.org">support.freewebcamp2022.org</a></span>
+        </P>
         <div>
-      </header>
 
-      <main class="page-content">
-       
-      </main>
+    <main class="page-content">
+        <section class="logo-presentation">
+          <h2>Free Web Dev Bootcamp 2022-2023 logo</h2>
+          <p>This logo was decline through logo competition from 19. June 2012 to date</p>
+          <img src="./images/logo3.png" alt="">
+        </section>
+        <section class="previous">
+          <h3>Meet Our Aluminials </h3>
+          <p>Take a look  2020 and 2021 academic year graduation </p>
+        </section>
+        <section class="partner">
+          <h3>Partner</h3>
+        </section>
+    </main>
+    <footer>
+      <div class="logo"></div>
+      <p>2022 Free web Bootcamp Ghana <br>
+      <span>Some Rights Reserve</span></p>
+    </footer>
 
+  </div>
 
-    </div>
-
-    <script src="./js/index.js"></script> 
+  <script src="./js/nav.js"></script>
 </body>
+
 </html>

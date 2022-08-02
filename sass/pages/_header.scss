@@ -148,6 +148,15 @@ header{
     width: 100%;
     // @include border;
 
+    //in the about
+    &#forAbout{
+      align-items: center;
+    }
+
+    .home{
+      display: none;
+    }
+
     h1{
       font-size: 3.5rem;
       font-weight: 900;
@@ -172,6 +181,32 @@ header{
       background-color: whitesmoke;
       padding: 2rem;
       border: 2px solid white;
+
+      //in the about file
+      &.about{
+        background-color: white;
+      }
+
+      &.about-contact-info{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      
+        span {
+          display: inline-block;
+          padding-top: 1rem;
+          text-align: center;
+          font-weight: 800;
+          font-size: 1.8rem;
+          text-decoration: underline;
+          
+          a{
+            color: $colorDark;
+          }
+        }
+      }
     }
 
     h2{
