@@ -1,0 +1,96 @@
+@use "../abstracts" as *;
+
+main{
+
+  .main-program {
+    background-image: url("../../images/pattern_bg.png");
+    background-repeat: repeat;
+    background-color: $colorDark;
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+    justify-content: center; 
+    align-content: center;
+    gap: 5%;
+    font-size: 1.6rem;
+
+    .program-header-wrap{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      gap:1rem ;
+    }
+
+    h2 {
+      font-size: $h2;
+      display: flex;
+      justify-content: center;
+    }
+    .program-style{
+      display: flex;
+      background-color: $colorPrimary;
+      width: 4rem;
+      height: 0.5rem;
+      align-self: center;
+    }
+    .program-list {
+      // background-color: $colorGray;
+      gap: 2%;
+      height: 120rem;
+      display: flex;
+      flex: auto;
+      background-color:  #3d4047;
+      align-items: center;
+      // @include border(blue);
+
+      .program-header {
+        display: flex;
+        width: 40%;
+        align-content: center;
+        justify-content: center;
+        padding: 1rem;
+        height: 100%;
+        // @include border;
+      }
+
+      .program-text{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        font-size: 2rem;
+        height: 100%;
+        // @include border;
+      }
+
+      .program-img{
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        // @include border;
+      }
+
+      .program-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // @include border;
+        width: 100%;
+        p{
+          color: $colorPrimary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: $h2;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+ 
+
+}

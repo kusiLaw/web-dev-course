@@ -2,14 +2,21 @@
 
 html{
   font-size: $font-size;
+
 }
 
 body {
   font-family: Lato, Helvetica, sans-serif;
+  max-width: 76.8rem;
+  min-width: 32rem;
+  background-color: rgb(106, 173, 14);
 }
 
 .container {
-  min-width: 37.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
 }
 
 
