@@ -359,5 +359,155 @@ main .mainSpeakers button {
   gap: 2rem;
   height: 4.5rem;
 }
+main .about-page-content {
+  background-color: white;
+}
+main .logo-presentation {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  background-color: white;
+  padding: 5rem;
+  height: auto;
+  gap: 2rem;
+  align-content: center;
+  justify-content: center;
+}
+main .logo-presentation h2 {
+  color: rgba(38, 40, 48, 0.95);
+}
+main .logo-presentation p {
+  color: rgba(38, 40, 48, 0.95);
+  font-size: 1.6rem;
+  font-weight: 500;
+  align-self: center;
+}
+main .logo-presentation img {
+  background-color: transparent;
+  height: auto;
+  border: 1px solid #d3d3d3;
+}
+main .previous {
+  background-color: white;
+  border-top: 1px solid #d3d3d3;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  gap: 2rem;
+}
+main .previous h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(38, 40, 48, 0.95);
+}
+main .previous p {
+  font-size: 1.6rem;
+  color: rgba(38, 40, 48, 0.95);
+}
+main .previous .meetAlu a {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  width: 100%;
+}
+main .previous .meetAlu a img {
+  height: auto;
+  width: 100%;
+}
+main .previous .meetAlu a .image-background {
+  background-image: linear-gradient(to bottom, rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7));
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 4rem;
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
+}
+main .previous .meetAlu a .image-background span {
+  display: inline-block;
+}
+main .previous .meetAlu a .image-background .info {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main .previous .meetAlu {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(38, 40, 48, 0.95);
+  background-image: linear-gradient(to bottom, rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("../images/meet6.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+main .partner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #272a31;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: white;
+  gap: 3rem;
+}
+main .partner .partner-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .partner h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+main .partner .partner-logo {
+  display: flex;
+  padding: 0 5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .partner .partner-logo img {
+  width: 12%;
+  height: auto;
+}
+main .partner .partner-logo img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  display: flex;
+  padding: 5rem;
+  background-color: white;
+}
+footer .footer-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+footer .footer-logo img {
+  width: 75%;
+}
+footer .rights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(38, 40, 48, 0.95);
+  font-style: italic;
+}
 
 /*# sourceMappingURL=main.css.map */

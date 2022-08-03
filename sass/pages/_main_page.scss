@@ -196,4 +196,161 @@ main{
 
   }
 
+  // in the about file
+  .about-page-content{
+    background-color: white;
+  }
+
+  .logo-presentation{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem ;
+    background-color: white;
+    padding: 5rem;
+    height: auto;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+    
+    h2{
+      color: $colorDarkLight;
+    }
+    p{
+      color: $colorDarkLight;
+      font-size: 1.6rem;
+      font-weight: 500;
+      align-self: center;
+    }
+
+    img{
+      background-color: transparent;
+      height: auto;
+      border: 1px solid $colorGray;
+
+    }
+  }
+
+  .previous{
+    background-color: white;
+    border-top: 1px solid $colorGray;;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    gap: 2rem;
+
+    h3{
+      font-size: $h3 ;
+      font-weight: 800;
+      color: $colorDarkLight;
+
+    }
+
+    p{
+      font-size: 1.6rem;
+      color: $colorDarkLight;
+      
+    }
+
+    //method 1
+    .meetAlu a{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      width: 100%;
+     
+      img{
+        height: auto;
+        width: 100%;
+      }
+
+      .image-background{
+        background-image: linear-gradient(
+          to bottom , $colorPrimaryLight,$colorPrimaryLight);
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 4rem;
+        font-weight: 900;
+        align-items: center;
+        justify-content: center;
+      span{
+        display: inline-block;
+      }
+      .info{
+              display: inline-block;
+              font-size: 1.5rem;
+              font-weight: 400;
+          }
+      
+      
+      }
+    }
+    
+    // method2
+    .meetAlu{
+      // padding: 10rem;
+      width: 100%;
+      height: auto;
+      border: 1px solid $colorDarkLight;
+      background-image: linear-gradient(
+          to bottom , $colorPrimaryLight,$colorPrimaryLight),
+          url("../images/meet6.webp");
+      background-size:100% 100% ;
+      background-repeat: no-repeat;
+    }
+    
+  }
+
+  .partner{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: $colorDark;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+    gap: 3rem;
+
+    .partner-header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    h3{
+      font-size: $h3;
+      font-weight: 900;
+    }
+
+    .partner-logo{
+      display: flex;
+      padding: 0 5rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      img{
+        width: 12%;
+        height: auto;
+       
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+
+
+    }
+
+  }
+
 }
