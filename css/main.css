@@ -12,6 +12,7 @@ body {
 .container {
   width: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
   background-color: yellow;
 }
@@ -36,7 +37,6 @@ header {
 header .navigation {
   display: flex;
   flex-direction: column;
-  position: relative;
   height: 6rem;
   width: 100%;
 }
@@ -61,8 +61,12 @@ header .navigation .nav-mobile .nav-content {
   z-index: 10;
   height: 100vh;
   margin: -1px;
-  max-width: 76.7rem;
-  width: 32rem;
+  margin-left: 1rem;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  bottom: -5;
+  right: 2;
   color: white;
   font-size: 2.2rem;
   background-color: rgba(38, 40, 48, 0.95);
@@ -76,7 +80,7 @@ header .navigation .nav-mobile .close-wrap {
 header .navigation .nav-mobile #toggle-close {
   align-self: flex-end;
   padding-top: 2rem;
-  padding-right: 2rem;
+  padding-right: 4rem;
 }
 header .navigation .nav-mobile .nav-items {
   display: flex;
@@ -114,6 +118,7 @@ header .navigation .nav-mobile .nav-items .nav-items-content {
   border: none;
   color: white;
   font-size: 2.2rem;
+  padding-right: 2rem;
 }
 header .navigation .nav-mobile .nav-items .nav-items-content #pointer {
   width: 1.5rem;

@@ -14,7 +14,7 @@ header{
   .navigation{
     display: flex ;
     flex-direction: column;
-    position: relative;
+    // position: relative;
     height: 6rem;
     width: 100%;
     // @include nevigation_mobile_default;
@@ -27,7 +27,9 @@ header{
       // @include border(green);
       align-items: center;
       padding: 1rem;
-      position: fixed;
+
+      //change from fixed to relative;
+      position: fixed; 
     }
     .nav-mobile{
       display: flex;
@@ -42,8 +44,14 @@ header{
         z-index: 10;
         height: 100vh;
         margin: -1px;
-        max-width: 76.7rem;
-        width: 32rem;
+        // max-width: 76.7rem;
+        // width: 32rem;
+        margin-left: 1rem;
+        width: 100vw;
+        top:0;
+        left: 0;
+        bottom:-5;
+        right: 2;
         color: white;
         font-size: 2.2rem;
         background-color: $colorDarkLight;
@@ -58,7 +66,7 @@ header{
       #toggle-close{
         align-self: flex-end;
         padding-top: 2rem;
-        padding-right: 2rem;
+        padding-right: 4rem;
       }
 
       .nav-items {
@@ -105,6 +113,7 @@ header{
           border: none;
           color: white;
           font-size: 2.2rem;
+          padding-right: 2rem;
 
           #pointer{
             width: 1.5rem;
