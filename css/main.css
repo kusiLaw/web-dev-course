@@ -730,7 +730,12 @@ main.about-page-content .logo-presentation p {
   }
 }
 
-.previous {
+main.about-page-content .previous p {
+  font-size: 1.6rem;
+  color: rgba(38, 40, 48, 0.95);
+}
+
+main .previous {
   background-color: white;
   border-top: 1px solid #d3d3d3;
   padding: 5rem;
@@ -742,33 +747,30 @@ main.about-page-content .logo-presentation p {
   gap: 2rem;
 }
 
-.previous h3 {
+main .previous h3 {
   font-size: 2.5rem;
   font-weight: 800;
   color: rgba(38, 40, 48, 0.95);
 }
 
-main.about-page-content .previous p {
-  font-size: 1.6rem;
-  color: rgba(38, 40, 48, 0.95);
-}
-
-.alumni-wraper {
+main .previous .alumni-wraper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding: 2rem;
 }
 
 @media (min-width: 767px) {
-  .alumni-wraper {
+  main .previous .alumni-wraper {
     flex-direction: row;
     gap: 3rem;
     padding: 3rem;
   }
 }
 
-.meetAlu {
+main .previous .meetAlu {
   display: flex;
 }
 
@@ -779,7 +781,8 @@ main.about-page-content .previous p {
   justify-content: stretch;
   width: 100%;
   height: auto;
-  padding: 1rem 3rem;
+
+  /* padding:  3rem; */
 }
 
 .meetAlu a .image-background {
@@ -796,6 +799,12 @@ main.about-page-content .previous p {
   font-weight: 900;
   align-items: center;
   justify-content: center;
+}
+
+.meetAlu a img {
+  align-self: center;
+  width: 100%;
+  height: auto;
 }
 
 .meetAlu a .image-background span {
@@ -826,7 +835,7 @@ main.about-page-content .previous p {
   gap: 1rem;
 }
 
-.partner-header h3 {
+section .partner-header h3 {
   font-size: 2.5rem;
   font-weight: 900;
 }
@@ -839,7 +848,7 @@ footer {
   align-items: center;
 }
 
-.footer-logo {
+footer .footer-logo {
   width: auto;
   display: flex;
   justify-content: center;
@@ -847,7 +856,7 @@ footer {
   gap: 2rem;
 }
 
-footer .rights {
+footer div.rights {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -871,37 +880,32 @@ footer .rights {
   }
 }
 
-.footer-logo img {
+footer .footer-logo img {
   width: 40%;
 }
 
 @media (min-width: 767px) {
-  .footer-logo img {
+  footer .footer-logo img {
     width: 15rem;
   }
 }
 
-.partner-logo img {
+section .partner-logo img {
   width: 12%;
   height: auto;
 }
 
 @media (min-width: 767px) {
-  .partner-logo img {
+  section .partner-logo img {
     width: 10rem;
   }
 }
 
-.meetAlu a img {
-  width: 100%;
-  height: auto;
-}
-
-.partner-logo img:hover {
+section .partner-logo img:hover {
   transform: scale(1.2);
 }
 
-.desktop-nav .desk-logo img {
+div.desktop-nav .desk-logo img {
   width: 6rem;
   animation: slidein 2s linear;
 }
