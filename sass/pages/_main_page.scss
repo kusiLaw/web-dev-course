@@ -37,7 +37,7 @@ main{
       // background-color: $colorGray;
       height: auto;
       display: flex;
-      padding: 2rem;
+      padding: 0.5rem;
       gap: 2%;
       background-color:  #3d4047;
       align-items: center;
@@ -45,7 +45,8 @@ main{
       @media  (min-width: $layout-breakpoint-small) {
         flex-direction: column;
          width: 18.6%;
-         gap: 2%;
+         gap: 2rem;
+         padding: 2rem;
 
          &:hover{
           transform: scale(1.1);
