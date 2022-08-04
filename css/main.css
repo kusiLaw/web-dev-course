@@ -2,13 +2,16 @@
   from {
     opacity: 0;
   }
+
   50% {
     opacity: 0.5;
   }
+
   to {
     opacity: 1;
   }
 }
+
 html {
   font-size: 62.5%;
 }
@@ -42,25 +45,29 @@ header {
   height: auto;
   width: 100%;
 }
+
 @media (min-width: 767px) {
   header {
     height: 100vh;
     z-index: 100;
   }
 }
-header .navigation {
+
+.navigation {
   display: flex;
   flex-direction: column;
   height: 6rem;
   width: 100%;
   z-index: 100;
 }
+
 @media (min-width: 767px) {
-  header .navigation {
+ .navigation {
     height: auto;
   }
 }
-header .navigation nav {
+
+nav {
   display: flex;
   height: 6rem;
   font-size: 1.6rem;
@@ -69,13 +76,15 @@ header .navigation nav {
   padding: 1rem;
   position: fixed;
 }
+
 @media (min-width: 767px) {
-  header .navigation nav {
+.navigation nav {
     padding: 0;
     height: auto;
   }
 }
-header .navigation .nav-desktop {
+
+.nav-desktop {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -84,50 +93,60 @@ header .navigation .nav-desktop {
   background-color: white;
   border-bottom: 1px solid #d3d3d3;
 }
+
 @media (max-width: 767px) {
-  header .navigation .nav-desktop {
+.nav-desktop {
     display: none;
   }
 }
-header .navigation .nav-desktop .social-media {
+
+.social-media {
   background-color: #3e3e3e;
   padding: 1rem;
 }
-header .navigation .nav-desktop .social-media ul {
+
+.social-media ul {
   display: flex;
   gap: 2rem;
   font-weight: 400;
   justify-content: flex-end;
   list-style: none;
 }
-header .navigation .nav-desktop .social-media ul:last-child {
+
+.social-media ul:last-child {
   margin-right: 9.6%;
 }
-header .navigation .nav-desktop .social-media a {
+
+.social-media a {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
-header .navigation .nav-desktop .desktop-nav {
+
+.nav-desktop .desktop-nav {
   display: flex;
   color: #272a31;
   padding: 1rem 10%;
 }
-header .navigation .nav-desktop .desktop-nav .desk-logo {
+
+.nav-desktop .desktop-nav .desk-logo {
   display: flex;
 }
-header .navigation .nav-desktop .desktop-nav .desk-logo img {
+
+.desktop-nav .desk-logo img {
   width: 6rem;
   animation: slidein 3s linear;
 }
-header .navigation .nav-desktop .desktop-nav .navwrapper {
+
+.desktop-nav .navwrapper {
   display: flex;
   width: 100%;
   justify-self: flex-end;
   justify-content: space-between;
   gap: 4%;
 }
-header .navigation .nav-desktop .desktop-nav .desk-nav-list {
+
+.desktop-nav .desk-nav-list {
   margin-left: 15%;
   display: flex;
   width: 70%;
@@ -137,17 +156,20 @@ header .navigation .nav-desktop .desktop-nav .desk-nav-list {
   align-items: center;
   flex-shrink: 1;
 }
-header .navigation .nav-desktop .desktop-nav .desk-nav-list a {
+
+.desktop-nav .desk-nav-list a {
   text-decoration: none;
   color: rgba(38, 40, 48, 0.95);
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.5rem;
 }
-header .navigation .nav-desktop .desktop-nav .desk-nav-list a:hover {
+
+.desktop-nav .desk-nav-list a:hover {
   color: #ec5242;
 }
-header .navigation .nav-desktop .desktop-nav .campaign {
+
+.desktop-nav .campaign {
   border: 3px solid #ec5242;
   padding: 0.5rem;
   font-weight: 600;
@@ -160,17 +182,20 @@ header .navigation .nav-desktop .desktop-nav .campaign {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-header .navigation .nav-mobile {
+
+.nav-mobile {
   display: flex;
   justify-content: flex-start;
   width: 100%;
 }
+
 @media (min-width: 767px) {
-  header .navigation .nav-mobile {
+ .nav-mobile {
     display: none;
   }
 }
-header .navigation .nav-mobile .nav-content {
+
+ .nav-content {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -179,52 +204,59 @@ header .navigation .nav-mobile .nav-content {
   width: 100vw;
   top: 0;
   left: 0;
-  bottom: -5;
-  right: 2;
   color: white;
   font-size: 2.2rem;
   background-color: rgba(38, 40, 48, 0.95);
 }
-header .navigation .nav-mobile .close-wrap {
+
+.close-wrap {
   border-bottom: 1px solid #d3d3d3;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 1.5rem;
 }
-header .navigation .nav-mobile #toggle-close {
+
+ #toggle-close {
   align-self: flex-end;
   padding-top: 2rem;
   padding-right: 4rem;
 }
-header .navigation .nav-mobile .nav-items {
+
+.nav-items {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   cursor: pointer;
 }
-header .navigation .nav-mobile .nav-items a {
+
+.nav-items a {
   color: white;
   text-decoration: none;
 }
-header .navigation .nav-mobile .nav-items a:hover {
+
+.nav-items a:hover {
   color: white;
   text-decoration: none;
   border-bottom: 1px solid #ec5242;
 }
-header .navigation .nav-mobile .nav-items .nav-nestd-list {
+
+.nav-items .nav-nestd-list {
   display: none;
   flex-direction: column;
   padding: 1rem;
 }
-header .navigation .nav-mobile .nav-items .nav-nestd-list.toggle {
+
+.nav-items .nav-nestd-list.toggle {
   display: flex;
 }
-header .navigation .nav-mobile .nav-items .nav-nestd-list li {
+
+.nav-items .nav-nestd-list li {
   padding: 0.5rem;
   font-size: 2rem;
   list-style: none;
 }
-header .navigation .nav-mobile .nav-items .nav-items-content {
+
+.nav-items .nav-items-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -234,22 +266,27 @@ header .navigation .nav-mobile .nav-items .nav-items-content {
   font-size: 2.2rem;
   padding-right: 2rem;
 }
-header .navigation .nav-mobile .nav-items .nav-items-content #pointer {
+
+#pointer {
   width: 1.5rem;
   height: 1.5rem;
   transform: rotate(-90deg);
 }
-header .navigation .nav-mobile .nav-items .nav-items-content #pointer.toggle {
+
+#pointer.toggle {
   transform: rotate(0deg);
 }
-header .navigation .nav-mobile .mobile-toggle {
+
+.mobile-toggle {
   width: auto;
 }
-header .navigation .nav-mobile .mobile-toggle #close-nav {
+
+.mobile-toggle #close-nav {
   width: 3rem;
   height: 3rem;
 }
-header .content {
+
+.content {
   display: flex;
   flex-direction: column;
   padding: 8%;
@@ -258,30 +295,36 @@ header .content {
   height: 100%;
   width: 100%;
 }
+
 @media (min-width: 767px) {
-  header .content {
+  .content {
     padding-top: 18rem;
   }
 }
-header .content#forAbout {
+
+.content#forAbout {
   align-items: center;
 }
-header .content .home {
+
+.content .home {
   display: none;
 }
-header .content h1 {
+
+.content h1 {
   font-size: 3.5rem;
   font-weight: 900;
   background-image: radial-gradient(#e5ba69, #ff2609);
   -webkit-background-clip: text;
   color: transparent;
 }
+
 @media (min-width: 767px) {
-  header .content h1 {
+  .content h1 {
     font-size: 5rem;
   }
 }
-header .content h1 span {
+
+.content h1 span {
   display: block;
   font-size: smaller;
   margin-bottom: 5%;
@@ -291,23 +334,27 @@ header .content h1 span {
   background-image: radial-gradient();
   color: transparent;
 }
-header .content p {
+
+.content p {
   font-size: 2rem;
   background-color: whitesmoke;
   padding: 2rem;
   border: 2px solid white;
 }
-header .content p.about {
+
+.content p.about {
   background-color: white;
 }
-header .content p.about-contact-info {
+
+ .content p.about-contact-info {
   background-color: transparent;
   border: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-header .content p.about-contact-info span {
+
+.content p.about-contact-info span {
   display: inline-block;
   padding-top: 1rem;
   text-align: center;
@@ -315,20 +362,23 @@ header .content p.about-contact-info span {
   font-size: 1.8rem;
   text-decoration: underline;
 }
-header .content p.about-contact-info span a {
+
+.content p.about-contact-info span a {
   color: #272a31;
 }
-header .content h2 {
+
+.content h2 {
   font-size: 2rem;
   font-weight: 700;
 }
-header .content h2 span {
+
+.content h2 span {
   display: block;
   font-size: 2rem;
   font-weight: 500;
 }
 
-main .main-program {
+.main-program {
   background-image: url("../../images/pattern_bg.png");
   background-repeat: repeat;
   background-color: #272a31;
@@ -341,24 +391,51 @@ main .main-program {
   gap: 2.5rem;
   font-size: 1.6rem;
 }
+
 @media (min-width: 767px) {
-  main .main-program {
+  .main-program {
     gap: 5rem;
     padding: 6rem 5%;
   }
 }
-main .main-program .pragram-list-wrapper {
+
+.program-header-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 1rem;
+}
+
+.program-header-wrap h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+ .program-style {
+  display: flex;
+  background-color: #ec5242;
+  width: 4rem;
+  height: 0.5rem;
+  justify-content: center;
+  align-self: center;
+}
+
+.pragram-list-wrapper {
   display: flex;
   gap: 2rem;
   flex-direction: column;
 }
+
 @media (min-width: 767px) {
-  main .main-program .pragram-list-wrapper {
+   .pragram-list-wrapper {
     flex-direction: row;
     gap: 2%;
   }
 }
-main .main-program .program-list {
+
+.program-list {
   height: auto;
   display: flex;
   padding: 0.5rem;
@@ -366,31 +443,36 @@ main .main-program .program-list {
   background-color: #3d4047;
   align-items: center;
 }
+
 @media (min-width: 767px) {
-  main .main-program .program-list {
+  .program-list {
     flex-direction: column;
     width: 18.6%;
     gap: 2rem;
     padding: 2rem;
   }
-  main .main-program .program-list:hover {
+
+.program-list:hover {
     transform: scale(1.1);
   }
 }
-main .main-program .program-list .program-header {
+
+.program-header {
   display: flex;
   width: 50%;
   align-content: center;
   justify-content: center;
   height: 100%;
 }
+
 @media (min-width: 767px) {
-  main .main-program .program-list .program-header {
+.program-header {
     flex-direction: column;
     width: 100%;
   }
 }
-main .main-program .program-list .program-text {
+
+.program-text {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -398,31 +480,36 @@ main .main-program .program-list .program-text {
   font-size: 2rem;
   height: auto;
 }
+
 @media (min-width: 767px) {
-  main .main-program .program-list .program-text {
+ .program-text {
     flex-direction: column;
     width: 100%;
   }
 }
-main .main-program .program-list .program-img {
+
+ .program-img {
   width: 6rem;
   height: 6rem;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
 }
-main .main-program .program-list .program-title {
+
+.program-title {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60%;
 }
+
 @media (min-width: 767px) {
-  main .main-program .program-list .program-title {
+  .program-title {
     width: 100%;
   }
 }
-main .main-program .program-list .program-title p {
+
+ .program-title p {
   color: #ec5242;
   display: flex;
   justify-content: center;
@@ -432,34 +519,41 @@ main .main-program .program-list .program-title p {
   flex-shrink: 2;
   font-weight: 500;
 }
-main .main-program .desktop-activities {
+
+.desktop-activities {
   display: flex;
   align-self: center;
   text-decoration: underline;
 }
+
 @media (max-width: 767px) {
-  main .main-program .desktop-activities {
+  .desktop-activities {
     display: none;
   }
 }
-main .main-program .desktop-activities a {
+
+.desktop-activities a {
   color: white;
 }
-main .main-program .desktop-activities a:hover {
+
+.desktop-activities a:hover {
   color: #ec5242;
 }
-main .main-program .join {
+
+.join {
   height: auto;
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
 }
+
 @media (min-width: 767px) {
-  main .main-program .join {
+  .join {
     display: none;
   }
 }
-main .main-program .join button {
+
+.join button {
   height: 6rem;
   color: white;
   font-size: larger;
@@ -469,26 +563,8 @@ main .main-program .join button {
   cursor: pointer;
   background-color: #ec5242;
 }
-main .program-header-wrap {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  gap: 1rem;
-}
-main h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-}
-main .program-style {
-  display: flex;
-  background-color: #ec5242;
-  width: 4rem;
-  height: 0.5rem;
-  align-self: center;
-}
-main .mainSpeakers {
+
+.mainSpeakers {
   background-color: white;
   padding-bottom: 3.5rem;
   padding-top: 7.9rem;
@@ -498,21 +574,41 @@ main .mainSpeakers {
   flex-direction: column;
   gap: 1.5rem;
 }
+
 @media (min-width: 767px) {
-  main .mainSpeakers {
+  .mainSpeakers {
     padding-bottom: 1rem;
   }
 }
-main .mainSpeakers .program-header-wrap {
+
+ .program-header-wrap {
   padding-bottom: 1.6rem;
 }
-main .mainSpeakers .lecturers_wrapper {
+
+ .program-header-wrap h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.program-style {
+  display: flex;
+  background-color: #ec5242;
+  width: 4rem;
+  height: 0.5rem;
+  justify-content: center;
+  align-self: center;
+}
+
+.lecturers_wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+
 @media (min-width: 767px) {
-  main .mainSpeakers .lecturers_wrapper {
+.lecturers_wrapper {
     gap: 3rem;
     padding: 3% 6%;
     width: 100%;
@@ -520,15 +616,17 @@ main .mainSpeakers .lecturers_wrapper {
     flex-direction: row;
   }
 }
-main .mainSpeakers .lecturers {
+
+.lecturers {
   height: auto;
   width: 100%;
   display: flex;
   padding: 2rem;
   gap: 1.5rem;
 }
+
 @media (min-width: 767px) {
-  main .mainSpeakers .lecturers {
+   .lecturers {
     width: 50%;
     padding: 3rem;
     justify-content: center;
@@ -537,49 +635,54 @@ main .mainSpeakers .lecturers {
     gap: 5%;
   }
 }
-main .mainSpeakers .lecturers .lecturer {
+
+.lecturer {
   display: flex;
   gap: 2rem;
 }
-main .mainSpeakers .lecturers .lecturer .lect-img {
+
+ .lect-img {
   width: 12.8rem;
 }
-main .mainSpeakers .lecturers .lecturer .lecturer-info {
+
+.lecturer-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2.4rem;
 }
+
 @media (min-width: 767px) {
-  main .mainSpeakers .lecturers .lecturer .lecturer-info {
+  .lecturer-info {
     gap: 0.1rem;
   }
 }
-main .mainSpeakers .lecturers .lecturer .about {
+
+.lecturer-info .about {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main .mainSpeakers .lecturers .lecturer .name {
+
+.lecturer-info .about .name {
   font-size: 2.2rem;
 }
-main .mainSpeakers .lecturers .lecturer .work {
+
+.lecturer-info .about .work {
   font-size: 1.4rem;
   color: #ec5242;
 }
-main .mainSpeakers .lecturers .lecturer .extra {
+
+.lecturer-info .extra {
   font-size: 1.4rem;
 }
-main .mainSpeakers .more {
+
+ .more {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 767px) {
-  main .mainSpeakers .more {
-    margin-top: -5rem;
-  }
-}
-main .mainSpeakers button {
+
+.more button {
   width: 90%;
   font-size: 1.8rem;
   font-family: 700;
@@ -589,10 +692,8 @@ main .mainSpeakers button {
   gap: 2rem;
   height: 4.5rem;
 }
-main .about-page-content {
-  background-color: white;
-}
-main .logo-presentation {
+
+.logo-presentation {
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
@@ -603,38 +704,49 @@ main .logo-presentation {
   align-content: center;
   justify-content: center;
 }
-main .logo-presentation .about-logo-wrapper {
+
+.logo-presentation h2 {
+  font-size: 3rem;
+  font-weight: 700;
   display: flex;
   justify-content: center;
-  padding: 2rem;
-}
-@media (min-width: 767px) {
-  main .logo-presentation .about-logo-wrapper {
-    padding: 4rem 10rem;
-  }
-}
-main .logo-presentation h2 {
   color: rgba(38, 40, 48, 0.95);
 }
-main .logo-presentation p {
+
+.logo-presentation p {
   color: rgba(38, 40, 48, 0.95);
   font-size: 1.6rem;
   font-weight: 500;
   align-self: center;
 }
-main .logo-presentation img {
+
+.about-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+@media (min-width: 767px) {
+ .about-logo-wrapper {
+    padding: 4rem 10rem;
+  }
+}
+
+.about-logo-wrapper img {
   background-color: transparent;
   width: 20rem;
   height: auto;
   border: 1px solid #d3d3d3;
 }
+
 @media (min-width: 767px) {
-  main .logo-presentation img {
+  .about-logo-wrapper img {
     padding: 0.5rem 5rem;
     width: 43rem;
   }
 }
-main .previous {
+
+.previous {
   background-color: white;
   border-top: 1px solid #d3d3d3;
   padding: 5rem;
@@ -645,29 +757,38 @@ main .previous {
   width: 100%;
   gap: 2rem;
 }
-main .previous .alumni-wraper {
+
+.previous h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(38, 40, 48, 0.95);
+}
+
+.previous p {
+  font-size: 1.6rem;
+  color: rgba(38, 40, 48, 0.95);
+}
+
+.alumni-wraper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
+
 @media (min-width: 767px) {
-  main .previous .alumni-wraper {
+ .alumni-wraper {
     flex-direction: row;
     gap: 3rem;
     padding: 3rem;
   }
 }
-main .previous h3 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: rgba(38, 40, 48, 0.95);
+
+.meetAlu {
+  display: flex;
 }
-main .previous p {
-  font-size: 1.6rem;
-  color: rgba(38, 40, 48, 0.95);
-}
-main .previous .meetAlu a {
+
+.meetAlu a {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -676,11 +797,8 @@ main .previous .meetAlu a {
   height: auto;
   padding: 1m 3rem;
 }
-main .previous .meetAlu a img {
-  width: 100%;
-  height: auto;
-}
-main .previous .meetAlu a .image-background {
+
+ .meetAlu a .image-background {
   background-image: linear-gradient(to bottom, rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7));
   display: flex;
   position: absolute;
@@ -695,15 +813,23 @@ main .previous .meetAlu a .image-background {
   align-items: center;
   justify-content: center;
 }
-main .previous .meetAlu a .image-background span {
+
+ .meetAlu a .image-background span {
   display: inline-block;
 }
-main .previous .meetAlu a .image-background .info {
+
+.meetAlu a .image-background .info {
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 400;
 }
-main .partner {
+
+.meetAlu a img {
+  width: 100%;
+  height: auto;
+}
+
+.partner {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -713,38 +839,54 @@ main .partner {
   color: white;
   gap: 3rem;
 }
-main .partner .partner-header {
+
+.partner-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-main .partner h3 {
+
+.partner-header h3 {
   font-size: 2.5rem;
   font-weight: 900;
 }
-main .partner .partner-logo {
+
+.program-style {
+  display: flex;
+  background-color: #ec5242;
+  width: 4rem;
+  height: 0.5rem;
+  justify-content: center;
+  align-self: center;
+}
+
+.partner-logo {
   display: flex;
   padding: 0 5rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 @media (min-width: 767px) {
-  main .partner .partner-logo {
+  .partner-logo {
     padding: 0 10%;
   }
 }
-main .partner .partner-logo img {
+
+.partner-logo img {
   width: 12%;
   height: auto;
 }
+
 @media (min-width: 767px) {
-  main .partner .partner-logo img {
+  .partner-logo img {
     width: 10rem;
   }
 }
-main .partner .partner-logo img:hover {
+
+.partner-logo img:hover {
   transform: scale(1.2);
 }
 
@@ -755,21 +897,25 @@ footer {
   justify-content: center;
   align-items: center;
 }
-footer .footer-logo {
+
+.footer-logo {
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-footer .footer-logo img {
+
+.footer-logo img {
   width: 40%;
 }
+
 @media (min-width: 767px) {
-  footer .footer-logo img {
+ .footer-logo img {
     width: 15rem;
   }
 }
+
 footer .rights {
   display: flex;
   flex-direction: column;
@@ -780,5 +926,3 @@ footer .rights {
   color: rgba(38, 40, 48, 0.95);
   font-style: italic;
 }
-
-/*# sourceMappingURL=main.css.map */
