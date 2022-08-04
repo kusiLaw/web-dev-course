@@ -11,6 +11,7 @@ header{
   width: 100%;
   @media (min-width: $layout-breakpoint-small) {
     height: 100vh;
+    z-index: -100;
   } 
   
   .navigation{
@@ -291,7 +292,7 @@ header{
       color: transparent;
       
       @media  (min-width: $layout-breakpoint-small) {
-        font-size: 4rem;
+        font-size: 5rem;
       }
 
 

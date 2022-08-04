@@ -4,16 +4,23 @@ footer{
   display: flex;
   padding: 5rem;
   background-color: white;
-
-  .footer-logo{
-    width: 50%;
+  justify-content: center;
+    align-items: center;
+  
+    .footer-logo{
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    @include border;
   
     img{
-      width: 75%;
+      width: 40%;
+    
+      @media  (min-width: $layout-breakpoint-small) {
+        width: 15rem;
+      }
     }
   }
 

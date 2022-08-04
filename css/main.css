@@ -34,6 +34,7 @@ header {
 @media (min-width: 767px) {
   header {
     height: 100vh;
+    z-index: -100;
   }
 }
 header .navigation {
@@ -266,7 +267,7 @@ header .content h1 {
 }
 @media (min-width: 767px) {
   header .content h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 header .content h1 span {
@@ -694,9 +695,19 @@ main .partner .partner-logo {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (min-width: 767px) {
+  main .partner .partner-logo {
+    padding: 0 10%;
+  }
+}
 main .partner .partner-logo img {
   width: 12%;
   height: auto;
+}
+@media (min-width: 767px) {
+  main .partner .partner-logo img {
+    width: 10rem;
+  }
 }
 main .partner .partner-logo img:hover {
   transform: scale(1.2);
@@ -706,16 +717,24 @@ footer {
   display: flex;
   padding: 5rem;
   background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 footer .footer-logo {
-  width: 50%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  border: 1px solid red;
 }
 footer .footer-logo img {
-  width: 75%;
+  width: 40%;
+}
+@media (min-width: 767px) {
+  footer .footer-logo img {
+    width: 15rem;
+  }
 }
 footer .rights {
   display: flex;
