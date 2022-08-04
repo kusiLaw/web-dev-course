@@ -320,26 +320,49 @@ main .main-program {
   background-image: url("../../images/pattern_bg.png");
   background-repeat: repeat;
   background-color: #272a31;
-  padding: 5%;
   color: white;
   display: flex;
   flex-direction: column;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
-  min-height: 80.7rem;
+  padding: 4rem 5%;
   height: auto;
   justify-content: space-between;
   gap: 2.5rem;
-  border: 1px solid blue;
   font-size: 1.6rem;
+}
+@media (min-width: 767px) {
+  main .main-program {
+    gap: 5rem;
+    padding: 6rem 5%;
+  }
+}
+main .main-program .pragram-list-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+@media (min-width: 767px) {
+  main .main-program .pragram-list-wrapper {
+    flex-direction: row;
+    gap: 2%;
+  }
 }
 main .main-program .program-list {
   height: auto;
   display: flex;
-  padding: 1rem;
+  padding: 2rem;
   gap: 2%;
   background-color: #3d4047;
   align-items: center;
+}
+@media (min-width: 767px) {
+  main .main-program .program-list {
+    flex-direction: column;
+    width: 18.6%;
+    gap: 2%;
+  }
+  main .main-program .program-list:hover {
+    transform: scale(1.1);
+  }
 }
 main .main-program .program-list .program-header {
   display: flex;
@@ -348,6 +371,12 @@ main .main-program .program-list .program-header {
   justify-content: center;
   height: 100%;
 }
+@media (min-width: 767px) {
+  main .main-program .program-list .program-header {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 main .main-program .program-list .program-text {
   width: 50%;
   display: flex;
@@ -355,6 +384,12 @@ main .main-program .program-list .program-text {
   align-content: flex-end;
   font-size: 2rem;
   height: auto;
+}
+@media (min-width: 767px) {
+  main .main-program .program-list .program-text {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 main .main-program .program-list .program-img {
   width: 6rem;
@@ -369,6 +404,11 @@ main .main-program .program-list .program-title {
   align-items: center;
   width: 60%;
 }
+@media (min-width: 767px) {
+  main .main-program .program-list .program-title {
+    width: 100%;
+  }
+}
 main .main-program .program-list .program-title p {
   color: #ec5242;
   display: flex;
@@ -379,11 +419,32 @@ main .main-program .program-list .program-title p {
   flex-shrink: 2;
   font-weight: 500;
 }
+main .main-program .desktop-activities {
+  display: flex;
+  align-self: center;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  main .main-program .desktop-activities {
+    display: none;
+  }
+}
+main .main-program .desktop-activities a {
+  color: white;
+}
+main .main-program .desktop-activities a:hover {
+  color: #ec5242;
+}
 main .main-program .join {
   height: auto;
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
+}
+@media (min-width: 767px) {
+  main .main-program .join {
+    display: none;
+  }
 }
 main .main-program .join button {
   height: 6rem;
