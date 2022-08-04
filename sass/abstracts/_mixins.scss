@@ -6,3 +6,14 @@
   width: 100%;
 }
 
+@keyframes slidein{
+  from{
+    margin-left: -100%;
+  }
+  50%{
+    margin-left: -50%;
+  }
+  to{
+    margin-left: 0%;
+  }
+}
