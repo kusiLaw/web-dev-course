@@ -592,6 +592,16 @@ main .logo-presentation {
   align-content: center;
   justify-content: center;
 }
+main .logo-presentation .about-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+@media (min-width: 767px) {
+  main .logo-presentation .about-logo-wrapper {
+    padding: 4rem 10rem;
+  }
+}
 main .logo-presentation h2 {
   color: rgba(38, 40, 48, 0.95);
 }
@@ -603,8 +613,15 @@ main .logo-presentation p {
 }
 main .logo-presentation img {
   background-color: transparent;
+  width: 20rem;
   height: auto;
   border: 1px solid #d3d3d3;
+}
+@media (min-width: 767px) {
+  main .logo-presentation img {
+    padding: 0.5rem 5rem;
+    width: 43rem;
+  }
 }
 main .previous {
   background-color: white;

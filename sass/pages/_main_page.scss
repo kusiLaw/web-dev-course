@@ -304,6 +304,16 @@ main{
     align-content: center;
     justify-content: center;
     
+    .about-logo-wrapper{
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      // @include border;
+      @media  (min-width: $layout-breakpoint-small) {
+        padding: 4rem 10rem;
+      }
+    }
+
     h2{
       color: $colorDarkLight;
     }
@@ -316,9 +326,13 @@ main{
 
     img{
       background-color: transparent;
+      width: 20rem;
       height: auto;
       border: 1px solid $colorGray;
-
+      @media  (min-width: $layout-breakpoint-small) {
+        padding: 0.5rem 5rem;
+        width: 43rem;
+      }
     }
   }
 
@@ -433,7 +447,7 @@ main{
       @media  (min-width: $layout-breakpoint-small) {
         padding: 0 10%;
         }
-        
+
       img{
         width: 12%;
         height: auto;
