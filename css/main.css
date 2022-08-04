@@ -4,9 +4,7 @@ html {
 
 body {
   font-family: Lato, Helvetica, sans-serif;
-  max-width: 76.8rem;
   min-width: 32rem;
-  background-color: rgb(106, 173, 14);
 }
 
 .container {
@@ -14,7 +12,6 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: yellow;
 }
 
 /* reset settings for all browser */
@@ -40,6 +37,11 @@ header .navigation {
   height: 6rem;
   width: 100%;
 }
+@media (min-width: 767px) {
+  header .navigation {
+    height: auto;
+  }
+}
 header .navigation nav {
   display: flex;
   height: 6rem;
@@ -49,10 +51,107 @@ header .navigation nav {
   padding: 1rem;
   position: fixed;
 }
+@media (min-width: 767px) {
+  header .navigation nav {
+    padding: 0;
+    height: auto;
+  }
+}
+header .navigation .nav-desktop {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  color: white;
+  background-color: white;
+  border-bottom: 1px solid #d3d3d3;
+}
+@media (max-width: 767px) {
+  header .navigation .nav-desktop {
+    display: none;
+  }
+}
+header .navigation .nav-desktop .social-media {
+  background-color: #3e3e3e;
+  padding: 1rem;
+}
+header .navigation .nav-desktop .social-media ul {
+  display: flex;
+  gap: 2rem;
+  font-weight: 400;
+  justify-content: flex-end;
+  list-style: none;
+}
+header .navigation .nav-desktop .social-media ul:last-child {
+  margin-right: 9.6%;
+}
+header .navigation .nav-desktop .social-media a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+header .navigation .nav-desktop .desktop-nav {
+  display: flex;
+  color: #272a31;
+  padding: 1rem 10%;
+}
+header .navigation .nav-desktop .desktop-nav .desk-logo {
+  display: flex;
+}
+header .navigation .nav-desktop .desktop-nav .desk-logo img {
+  width: 6rem;
+}
+header .navigation .nav-desktop .desktop-nav .navwrapper {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+  justify-self: flex-end;
+  justify-content: space-between;
+  gap: 4%;
+}
+header .navigation .nav-desktop .desktop-nav .desk-nav-list {
+  margin-left: 15%;
+  display: flex;
+  width: 70%;
+  gap: 2rem;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  flex-shrink: 1;
+}
+header .navigation .nav-desktop .desktop-nav .desk-nav-list a {
+  text-decoration: none;
+  color: rgba(38, 40, 48, 0.95);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+header .navigation .nav-desktop .desktop-nav .desk-nav-list a:hover {
+  color: #ec5242;
+}
+header .navigation .nav-desktop .desktop-nav .campaign {
+  border: 3px solid #ec5242;
+  padding: 0.5rem;
+  font-weight: 600;
+  width: 25rem;
+  color: #ec5242;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 header .navigation .nav-mobile {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+}
+@media (min-width: 767px) {
+  header .navigation .nav-mobile {
+    display: none;
+  }
 }
 header .navigation .nav-mobile .nav-content {
   display: none;
