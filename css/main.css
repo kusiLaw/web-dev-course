@@ -1,12 +1,12 @@
 @keyframes slidein {
   from {
-    margin-left: -100%;
+    opacity: 0;
   }
   50% {
-    margin-left: -50%;
+    opacity: 0.5;
   }
   to {
-    margin-left: 0%;
+    opacity: 1;
   }
 }
 html {
@@ -118,6 +118,7 @@ header .navigation .nav-desktop .desktop-nav .desk-logo {
 }
 header .navigation .nav-desktop .desktop-nav .desk-logo img {
   width: 6rem;
+  animation: slidein 3s linear;
 }
 header .navigation .nav-desktop .desktop-nav .navwrapper {
   display: flex;

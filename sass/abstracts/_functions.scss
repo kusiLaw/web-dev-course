@@ -1,9 +1,0 @@
-@use 'sass:math';
-
-@mixin border($theme: red) {
-  border: 1px solid $theme;
-}
-
-@function rem($pixels,$context:16) {
-  @return (math.div($pixels, $context)) * 1rem;
-}
