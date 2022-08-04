@@ -164,8 +164,6 @@ header .navigation .nav-mobile .nav-content {
   position: absolute;
   z-index: 10;
   height: 100vh;
-  margin: -1px;
-  margin-left: 1rem;
   width: 100vw;
   top: 0;
   left: 0;
@@ -635,6 +633,19 @@ main .previous {
   width: 100%;
   gap: 2rem;
 }
+main .previous .alumni-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 767px) {
+  main .previous .alumni-wraper {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 3rem;
+  }
+}
 main .previous h3 {
   font-size: 2.5rem;
   font-weight: 800;
@@ -648,13 +659,14 @@ main .previous .meetAlu a {
   display: flex;
   position: relative;
   flex-direction: column;
+  justify-content: stretch;
   width: 100%;
   height: auto;
-  width: 100%;
+  padding: 1m 3rem;
 }
 main .previous .meetAlu a img {
-  height: auto;
   width: 100%;
+  height: auto;
 }
 main .previous .meetAlu a .image-background {
   background-image: linear-gradient(to bottom, rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7));
@@ -678,14 +690,6 @@ main .previous .meetAlu a .image-background .info {
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 400;
-}
-main .previous .meetAlu {
-  width: 100%;
-  height: auto;
-  border: 1px solid rgba(38, 40, 48, 0.95);
-  background-image: linear-gradient(to bottom, rgba(236, 82, 66, 0.7), rgba(236, 82, 66, 0.7)), url("../images/meet6.webp");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 }
 main .partner {
   background-color: white;
@@ -745,7 +749,6 @@ footer .footer-logo {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border: 1px solid red;
 }
 footer .footer-logo img {
   width: 40%;

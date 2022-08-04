@@ -3,8 +3,6 @@
 header{
   display: flex;
   flex-direction: column;
-
-  // @include border(blue); 
   background: url('../../images/mobile_intro_bg.png') no-repeat;
   background-size: cover;
   height: auto;
@@ -17,23 +15,20 @@ header{
   .navigation{
     display: flex ;
     flex-direction: column;
-    // position: relative;
     height: 6rem;
     width: 100%;
     z-index: 100;
-    // @include nevigation_mobile_default;
     @media (min-width: $layout-breakpoint-small) {
       height: auto;
     } 
+
     nav {
       display: flex;
       height: 6rem;
       font-size: 1.6rem;
       width: 100%;
-      // @include border(green);
       align-items: center;
       padding: 1rem;
-      //change from fixed to relative;
       position: fixed; 
       @media (min-width: $layout-breakpoint-small) {
         padding: 0;
@@ -49,7 +44,6 @@ header{
       color: white;
       background-color: white;
       border-bottom: 1px solid $colorGray;
-      // @include border;
 
       @media (max-width: $layout-breakpoint-small) {
         display: none;
@@ -71,35 +65,30 @@ header{
           }
         } 
        
-      //  img{
-      //   // width: ;
-      //  }
-       a{
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-       }
+ 
+        a{
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+        }
       }
 
       .desktop-nav{
         display: flex;
         color: $colorDark;
-        // justify-content: space-between;
         padding: 1rem 10%;
        
         .desk-logo{
           display: flex;
-          // width: 53rem;
-          // @include border;
+          
           img{
             width: 6rem;
           }
         }
 
-        .navwrapper{
+        .navwrapper {
           display: flex;
           width: 100%;
-          // @include border;
           justify-self: flex-end;
           justify-content: space-between;
           gap: 4%;
@@ -113,8 +102,8 @@ header{
           list-style: none;
           justify-content: space-between;
           align-items: center;
-          // @include border;
           flex-shrink: 1;
+          
           a{
             text-decoration: none;
             color: $colorDarkLight;
@@ -134,7 +123,6 @@ header{
           width: 25rem;
           color: $colorPrimary;
           flex-shrink: 1;
-          // margin-right: 8rem;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -160,10 +148,6 @@ header{
         position: absolute;
         z-index: 10;
         height: 100vh;
-        margin: -1px;
-        // max-width: 76.7rem;
-        // width: 32rem;
-        margin-left: 1rem;
         width: 100vw;
         top:0;
         left: 0;
@@ -190,7 +174,6 @@ header{
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        // @include border;
         cursor: pointer;
         
 
@@ -257,12 +240,7 @@ header{
         }
       }
     }
-  
-  
-  
-  
   }
-
 
   .content{
     display: flex;
@@ -272,10 +250,10 @@ header{
     gap: 1rem;
     height: 100%;
     width: 100%;
-    // @include border;
     @media  (min-width: $layout-breakpoint-small) {
       padding-top: 18rem;
     }
+    
     //in the about
     &#forAbout{
       align-items: center;

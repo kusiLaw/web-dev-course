@@ -25,7 +25,7 @@ main{
       display: flex;
       gap: 2rem;
       flex-direction: column;
-      // @include border(blue);
+   
       @media  (min-width: $layout-breakpoint-small) {
         flex-direction: row;
         gap: 2%;
@@ -34,14 +34,13 @@ main{
     }
 
     .program-list {
-      // background-color: $colorGray;
       height: auto;
       display: flex;
       padding: 0.5rem;
       gap: 2%;
       background-color:  #3d4047;
       align-items: center;
-      // @include border(blue);
+
       @media  (min-width: $layout-breakpoint-small) {
         flex-direction: column;
          width: 18.6%;
@@ -58,9 +57,8 @@ main{
         width: 50%;
         align-content: center;
         justify-content: center;
-        // padding: 1rem;
         height: 100%;
-        // @include border;
+   
         @media  (min-width: $layout-breakpoint-small) {
           flex-direction: column;
           width: 100%;
@@ -75,7 +73,7 @@ main{
         align-content: flex-end;
         font-size: 2rem;
         height: auto;
-        // @include border;
+
         @media  (min-width: $layout-breakpoint-small) {
           flex-direction: column;
           width: 100%;
@@ -88,14 +86,12 @@ main{
         display: flex;
         flex-wrap: wrap;
         align-self: center;
-        // @include border;
       }
 
       .program-title{
         display: flex;
         justify-content: center;
         align-items: center;
-        // @include border;
         width: 60%;
         @media  (min-width: $layout-breakpoint-small) {
           width: 100%;
@@ -197,7 +193,7 @@ main{
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      // @include border;
+
       @media  (min-width: $layout-breakpoint-small) {
         gap: 3rem;
         padding: 3% 6%;
@@ -239,7 +235,7 @@ main{
           flex-direction: column;
           justify-content: space-between;
           gap: 2.4rem;
-          // @include border;
+  
           @media  (min-width: $layout-breakpoint-small) {
             gap: 0.1rem;
           }
@@ -308,7 +304,7 @@ main{
       display: flex;
       justify-content: center;
       padding: 2rem;
-      // @include border;
+
       @media  (min-width: $layout-breakpoint-small) {
         padding: 4rem 10rem;
       }
@@ -347,6 +343,20 @@ main{
     width: 100%;
     gap: 2rem;
 
+ 
+    .alumni-wraper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      @media  (min-width: $layout-breakpoint-small) {
+        flex-direction: row;
+        gap: 3rem;
+        padding: 3rem;
+      }
+    }
+
     h3{
       font-size: $h3 ;
       font-weight: 800;
@@ -365,13 +375,15 @@ main{
       display: flex;
       position: relative;
       flex-direction: column;
+      justify-content: stretch;
       width: 100%;
       height: auto;
-      width: 100%;
-     
+      padding: 1m 3rem;
+   
       img{
-        height: auto;
         width: 100%;
+        height: auto;
+        
       }
 
       .image-background{
@@ -400,19 +412,6 @@ main{
       
       
       }
-    }
-    
-    // method2
-    .meetAlu{
-      // padding: 10rem;
-      width: 100%;
-      height: auto;
-      border: 1px solid $colorDarkLight;
-      background-image: linear-gradient(
-          to bottom , $colorPrimaryLight,$colorPrimaryLight),
-          url("../images/meet6.webp");
-      background-size:100% 100% ;
-      background-repeat: no-repeat;
     }
     
   }
