@@ -11,7 +11,7 @@ header{
   width: 100%;
   @media (min-width: $layout-breakpoint-small) {
     height: 100vh;
-    z-index: -100;
+    z-index: 100;
   } 
   
   .navigation{
@@ -20,6 +20,7 @@ header{
     // position: relative;
     height: 6rem;
     width: 100%;
+    z-index: 100;
     // @include nevigation_mobile_default;
     @media (min-width: $layout-breakpoint-small) {
       height: auto;
