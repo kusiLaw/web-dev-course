@@ -486,8 +486,27 @@ main .mainSpeakers {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 767px) {
+  main .mainSpeakers {
+    padding-bottom: 1rem;
+  }
+}
 main .mainSpeakers .program-header-wrap {
   padding-bottom: 1.6rem;
+}
+main .mainSpeakers .lecturers_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 767px) {
+  main .mainSpeakers .lecturers_wrapper {
+    gap: 3rem;
+    padding: 3% 6%;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 main .mainSpeakers .lecturers {
   height: auto;
@@ -495,6 +514,16 @@ main .mainSpeakers .lecturers {
   display: flex;
   padding: 2rem;
   gap: 1.5rem;
+}
+@media (min-width: 767px) {
+  main .mainSpeakers .lecturers {
+    width: 50%;
+    padding: 3rem;
+    justify-content: center;
+    flex: 1 1 40%;
+    flex-direction: row;
+    gap: 5%;
+  }
 }
 main .mainSpeakers .lecturers .lecturer {
   display: flex;
@@ -508,6 +537,11 @@ main .mainSpeakers .lecturers .lecturer .lecturer-info {
   flex-direction: column;
   justify-content: space-between;
   gap: 2.4rem;
+}
+@media (min-width: 767px) {
+  main .mainSpeakers .lecturers .lecturer .lecturer-info {
+    gap: 0.1rem;
+  }
 }
 main .mainSpeakers .lecturers .lecturer .about {
   display: flex;
@@ -527,6 +561,11 @@ main .mainSpeakers .lecturers .lecturer .extra {
 main .mainSpeakers .more {
   display: flex;
   justify-content: center;
+}
+@media (min-width: 767px) {
+  main .mainSpeakers .more {
+    margin-top: -5rem;
+  }
 }
 main .mainSpeakers button {
   width: 90%;

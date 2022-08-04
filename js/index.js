@@ -24,11 +24,6 @@ let speakers = [
     extra: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quae hic eos molestias unde! Minus rerum voluptates corporis aut recusandae dolores quo quis, officiis,repellat! Molestias, illo."
   }
 
-
-
-
-
-
 ];
 
 function createMyElement(el, cl = '', ids = '') {
@@ -90,8 +85,11 @@ function insertToPage(obj, parent){
   }
 }
 
-let mainspeakers= document.querySelector(".mainSpeakers")
+let hasPopulate = false;
+let mainspeakers= document.querySelector(".lecturers_wrapper")
 // mainspeakers.appendChild(createPopup(speakers[1]))
+
+
 
 let btn = document.querySelector(".more")
 btn.addEventListener("click", (event)=>{
@@ -99,3 +97,26 @@ btn.addEventListener("click", (event)=>{
   insertToPage(speakers, mainspeakers)
   // event.stopPropagation();
 })
+
+//load speakers automatic on large screens
+window.onload = function(event) {
+  // console.log('page loading', window.innerWidth)
+  if(window.innerWidth >= 768){
+    btn.style.display = 'none'; 
+    if (!hasPopulate){
+      insertToPage(speakers, mainspeakers)
+      hasPopulate = true
+    }
+  }
+   
+}
+
+window.onresize = function(event) {
+  // console.log('resizing')
+  if (!hasPopulate){
+    btn.style.display = 'none'; 
+    insertToPage(speakers, mainspeakers)
+    hasPopulate = true
+  }
+   
+}

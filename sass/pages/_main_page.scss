@@ -185,9 +185,26 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    @media  (min-width: $layout-breakpoint-small){
+      padding-bottom: 1rem;
+    }
 
     .program-header-wrap{
       padding-bottom: 1.6rem;
+    }
+
+    .lecturers_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      // @include border;
+      @media  (min-width: $layout-breakpoint-small) {
+        gap: 3rem;
+        padding: 3% 6%;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
     }
 
     .lecturers{
@@ -196,13 +213,25 @@ main{
       display: flex;
       padding: 2rem;
       gap: 1.5rem;
+     
+
+      @media  (min-width: $layout-breakpoint-small) {
+        width: 50%;
+        padding: 3rem;
+        justify-content: center;
+        flex:1 1 40%;
+        flex-direction: row;
+        gap: 5%;
+        
+      }
 
       .lecturer{
         display: flex;
         gap: 2rem;
-
+      
         .lect-img{
           width: 12.8rem;
+          
         }
 
         .lecturer-info{
@@ -210,6 +239,10 @@ main{
           flex-direction: column;
           justify-content: space-between;
           gap: 2.4rem;
+          // @include border;
+          @media  (min-width: $layout-breakpoint-small) {
+            gap: 0.1rem;
+          }
         }
 
         .about{
@@ -237,6 +270,10 @@ main{
     .more{
       display: flex;
       justify-content: center;
+      @media  (min-width: $layout-breakpoint-small) {
+        margin-top: -5rem;
+      }
+    
     }
     button{
       width: 90%;
