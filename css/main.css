@@ -1,14 +1,17 @@
 @keyframes slidein {
   from {
     opacity: 0;
+    margin-left: -100%;
   }
 
   50% {
     opacity: 0.5;
+    margin-left: -50%;
   }
 
   to {
     opacity: 1;
+    margin-left: 0%;
   }
 }
 
@@ -40,7 +43,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  background: url("../../images/mobile_intro_bg.png") no-repeat;
+  background: url("../images/mobile_intro_bg.png") no-repeat;
   background-size: cover;
   height: auto;
   width: 100%;
@@ -59,6 +62,8 @@ header {
   height: 6rem;
   width: 100%;
   z-index: 100;
+
+  /* background-color: transparent; */
 }
 
 @media (min-width: 767px) {
@@ -337,6 +342,12 @@ nav {
   font-weight: 700;
 }
 
+.content h2 span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .content p.about-contact-info span {
   display: inline-block;
   padding-top: 1rem;
@@ -346,20 +357,16 @@ nav {
   text-decoration: underline;
 }
 
-.content h2 span {
-  display: block;
-  font-size: 2rem;
-  font-weight: 500;
+.desktop-activities a {
+  color: white;
 }
 
 .about-contact-info span a {
   color: #272a31;
 }
 
-
-
 .main-program {
-  background-image: url("../../images/pattern_bg.png");
+  background-image: url("../images/pattern_bg.png");
   background-repeat: repeat;
   background-color: #272a31;
   color: white;
@@ -512,10 +519,6 @@ nav {
   }
 }
 
-.desktop-activities a {
-  color: white;
-}
-
 .join {
   height: auto;
   display: flex;
@@ -557,24 +560,29 @@ nav {
   }
 }
 
-.program-header-wrap {
+.mainSpeakers .program-header-wrap {
   padding-bottom: 1.6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.program-header-wrap h2 {
+.mainSpeakers .program-header-wrap h2 {
   font-size: 3rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
 }
 
-.program-style {
+.mainSpeakers .program-header-wrap .program-style {
   display: flex;
   background-color: #ec5242;
   width: 4rem;
   height: 0.5rem;
   justify-content: center;
   align-self: center;
+  align-items: center;
 }
 
 .lecturers_wrapper {
@@ -669,19 +677,19 @@ nav {
   height: 4.5rem;
 }
 
-.logo-presentation {
+.about-page-content .logo-presentation {
   display: flex;
   flex-direction: column;
+  padding: 5rem;
   padding-top: 5rem;
   background-color: white;
-  padding: 5rem;
   height: auto;
   gap: 2rem;
   align-content: center;
   justify-content: center;
 }
 
-.logo-presentation h2 {
+main.about-page-content .logo-presentation h2 {
   font-size: 3rem;
   font-weight: 700;
   display: flex;
@@ -689,7 +697,7 @@ nav {
   color: rgba(38, 40, 48, 0.95);
 }
 
-.logo-presentation p {
+main.about-page-content .logo-presentation p {
   color: rgba(38, 40, 48, 0.95);
   font-size: 1.6rem;
   font-weight: 500;
@@ -740,7 +748,7 @@ nav {
   color: rgba(38, 40, 48, 0.95);
 }
 
-.previous p {
+main.about-page-content .previous p {
   font-size: 1.6rem;
   color: rgba(38, 40, 48, 0.95);
 }
@@ -764,7 +772,7 @@ nav {
   display: flex;
 }
 
-.meetAlu a {
+.previous .meetAlu a {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -821,15 +829,6 @@ nav {
 .partner-header h3 {
   font-size: 2.5rem;
   font-weight: 900;
-}
-
-.program-style {
-  display: flex;
-  background-color: #ec5242;
-  width: 4rem;
-  height: 0.5rem;
-  justify-content: center;
-  align-self: center;
 }
 
 footer {
@@ -904,7 +903,7 @@ footer .rights {
 
 .desktop-nav .desk-logo img {
   width: 6rem;
-  animation: slidein 3s linear;
+  animation: slidein 2s linear;
 }
 
 .desktop-nav .desk-nav-list a {
