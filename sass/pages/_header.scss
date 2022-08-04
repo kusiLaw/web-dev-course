@@ -9,7 +9,9 @@ header{
   background-size: cover;
   height: auto;
   width: 100%;
-
+  @media (min-width: $layout-breakpoint-small) {
+    height: 100vh;
+  } 
   
   .navigation{
     display: flex ;
@@ -95,7 +97,7 @@ header{
         .navwrapper{
           display: flex;
           width: 100%;
-          @include border;
+          // @include border;
           justify-self: flex-end;
           justify-content: space-between;
           gap: 4%;
@@ -109,7 +111,7 @@ header{
           list-style: none;
           justify-content: space-between;
           align-items: center;
-          @include border;
+          // @include border;
           flex-shrink: 1;
           a{
             text-decoration: none;
@@ -269,7 +271,9 @@ header{
     height: 100%;
     width: 100%;
     // @include border;
-
+    @media  (min-width: $layout-breakpoint-small) {
+      padding-top: 18rem;
+    }
     //in the about
     &#forAbout{
       align-items: center;
@@ -285,6 +289,11 @@ header{
       background-image: radial-gradient( #e5ba69, #ff2609);
       -webkit-background-clip: text;
       color: transparent;
+      
+      @media  (min-width: $layout-breakpoint-small) {
+        font-size: 4rem;
+      }
+
 
       span{
         display: block;

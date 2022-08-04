@@ -31,6 +31,11 @@ header {
   height: auto;
   width: 100%;
 }
+@media (min-width: 767px) {
+  header {
+    height: 100vh;
+  }
+}
 header .navigation {
   display: flex;
   flex-direction: column;
@@ -104,7 +109,6 @@ header .navigation .nav-desktop .desktop-nav .desk-logo img {
 header .navigation .nav-desktop .desktop-nav .navwrapper {
   display: flex;
   width: 100%;
-  border: 1px solid red;
   justify-self: flex-end;
   justify-content: space-between;
   gap: 4%;
@@ -117,7 +121,6 @@ header .navigation .nav-desktop .desktop-nav .desk-nav-list {
   list-style: none;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
   flex-shrink: 1;
 }
 header .navigation .nav-desktop .desktop-nav .desk-nav-list a {
@@ -243,6 +246,11 @@ header .content {
   height: 100%;
   width: 100%;
 }
+@media (min-width: 767px) {
+  header .content {
+    padding-top: 18rem;
+  }
+}
 header .content#forAbout {
   align-items: center;
 }
@@ -255,6 +263,11 @@ header .content h1 {
   background-image: radial-gradient(#e5ba69, #ff2609);
   -webkit-background-clip: text;
   color: transparent;
+}
+@media (min-width: 767px) {
+  header .content h1 {
+    font-size: 4rem;
+  }
 }
 header .content h1 span {
   display: block;
