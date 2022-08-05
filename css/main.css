@@ -49,12 +49,14 @@ header {
   background-size: cover;
   height: auto;
   width: 100%;
+  padding-bottom: 8rem;
 }
 
 @media (min-width: 767px) {
   header {
     height: 100vh;
     z-index: 100;
+    padding-bottom: 8rem;
   }
 }
 
