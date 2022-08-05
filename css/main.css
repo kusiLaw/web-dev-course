@@ -826,9 +826,10 @@ main .previous .meetAlu {
   color: white;
   gap: 3rem;
 }
+
 @media (min-width: 767px) {
-   #partner-about{
-  display: none;
+  #partner-about {
+    display: none;
   }
 }
 
@@ -839,7 +840,6 @@ main .previous .meetAlu {
   align-items: center;
   gap: 1rem;
 }
-
 
 section .partner-header h3 {
   font-size: 2.5rem;
@@ -853,6 +853,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 767px) {
   #about-footer {
     background-color: #2e2e2e;
@@ -860,7 +861,6 @@ footer {
     gap: 2em;
   }
 }
-
 
 footer .footer-logo {
   width: auto;
@@ -880,9 +880,9 @@ footer div.rights {
   color: rgba(38, 40, 48, 0.95);
   font-style: italic;
 }
-@media (min-width: 767px) {
 
-  footer div.rights #about-rights-text{
+@media (min-width: 767px) {
+  footer div.rights #about-rights-text {
     color: white;
   }
 }

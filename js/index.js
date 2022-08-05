@@ -13,13 +13,13 @@ const speakers = [
   },
   {
     picture: './images/speaker_05.png',
-    name: 'Afua Koobi',
+    name: 'Lorem Addis',
     work: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     extra: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quae hic eos molestias unde! Minus rerum voluptates corporis aut recusandae dolores quo quis, officiis,repellat! Molestias, illo.',
   },
   {
     picture: './images/speaker_06.png',
-    name: 'Yaw Appesi',
+    name: 'Lorem App',
     work: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     extra: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quae hic eos molestias unde! Minus rerum voluptates corporis aut recusandae dolores quo quis, officiis,repellat! Molestias, illo.',
   },
