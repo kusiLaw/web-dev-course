@@ -8,7 +8,7 @@ This is a web developmant website project. The project has different sections wh
 - Javascript
 
 ### Live Demo
-[web-dev-course-live-demo-link](#)
+[web-dev-course-live-demo-link](https://kusilaw.github.io/web-dev-course/)
 
 ### Getting Started 
 To get a local copy up and running follow these simple example steps
@@ -39,7 +39,7 @@ Give a star :star: if you like this project!
 
 ### Acknowledgments
 Thanks to Microverse \
-Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 ### 📝 License
 This Project is <a href ="https://opensource.org/licenses/MIT">MIT </a> licensed
