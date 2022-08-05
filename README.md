@@ -10,6 +10,8 @@ This is a web developmant website project. The project has different sections wh
 ### Live Demo
 [web-dev-course-live-demo-link](https://kusilaw.github.io/web-dev-course/)
 
+### Live Video
+click here [Loom](https://www.loom.com/share/4b0b9691e4a047d1ba6b0347f9197fca)
 ### Getting Started 
 To get a local copy up and running follow these simple example steps
 
