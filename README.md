@@ -1,5 +1,5 @@
 # web-dev-course
-This is a web developmant website project. The project has different sections which includes welcome header, main courses offered, contact us form and lecturers. 
+This is a web developmant website project. The project has different sections which includes welcome header, main courses offered, contact us form and lecturers. Built with Javascript
 
 ### Built With
 - Html<br />
