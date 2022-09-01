@@ -13,6 +13,9 @@ The activities and lecturer section also displays the list of daily activities a
 
 ### Live Demo
 [web-dev-course-live-demo-link](https://kusilaw.github.io/web-dev-course/)
+- Clone the project to local computer
+- Open index.html with browser or local server
+
 
 ### Live Video
 click here [Loom](https://www.loom.com/share/4b0b9691e4a047d1ba6b0347f9197fca)
