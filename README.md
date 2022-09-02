@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # web-dev-course
 This is a web development demo website project and it is my first capstone project. The project has different sections which include the header, main courses offered, contact us form, and lecturers. 
 
