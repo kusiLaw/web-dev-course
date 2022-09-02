@@ -22,6 +22,11 @@ click here [Loom](https://www.loom.com/share/4b0b9691e4a047d1ba6b0347f9197fca)
 ### Getting Started 
 To get a local copy up and running follow these simple example steps
 
+```console
+lawrence@lawrence:~$ git clone "git@github.com:kusiLaw/web-dev-course.git"
+lawrence@lawrence:~$ npm start
+```
+
 #### Prerequisite:  
   - Vscode editor 
   - Knowldege About HTML,CSS and Javascript Linters
