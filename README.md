@@ -1,9 +1,10 @@
 # web-dev-course
-This is a web development demo website project and it is my first capstone project. The project has different sections which include the header, main courses offered, contact us form, and lecturers. Built with Javascript
+This is a web development demo website project and it is my first capstone project. The project has different sections which include the header, main courses offered, contact us form, and lecturers. 
 
 The header section of the page is divided into two. the first section has social media icon and signup which connects users. the second contains links and the company logo. Next, is a welcome section with small text
 
-The activities and lecturer section also displays the list of daily activities and course lecturers with their bio information respectively. The about and the partner also display the partner logo and website log. It very responsive on desktop and mobile versions
+The activities and lecturer section also displays the list of daily activities and course lecturers with their bio information respectively. The about and the partner also display the partner logo and website log. It very responsive on desktop and mobile versions. Built with Javascript
+
 
 ### Built With
 - Html<br />
